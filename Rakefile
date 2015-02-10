@@ -11,7 +11,7 @@ task :default => :spec
 task :rspec_all_databases do
   results = {}
   
-  dbs = %w{ postgresql mysql sqlite3 }
+  dbs = %w{ postgresql }
   if ENV['DB']
     dbs = ENV['DB'].split(',') 
   end
